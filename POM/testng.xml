@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+<parameter name="inputMessage" value="hello"/>
+	
+    <classes>
+ <class name="com.anu.testscripts.SimpleInputFormDemoTest">
+		<methods>
+			<include name="verifySingleInputTextField"/>
+			<exclude name="verifyBackgroundColorofShowMessageButton"/>
+			<exclude name="verifyFontSizeOfShowMessageButton"/>
+		</methods>
+     </class>
+	
+		 
+ <!-- <class name="com.anu.testscripts.SelectInputTest">
+		<methods>
+			<include name="verifySelectInputDemo"/>
+			<include name="verifyWidthOfselectColorDropDownMenu"/>
+			<include name="verifyFontSizeOfselectColorTextField"/>
+		</methods>
+	  </class>
+      <class name="com.anu.testscripts.CheckBoxDemoTest">
+		<methods>
+			<include name="verifySingleCheckBoxDemo"/>
+			<include name="verifySizeOfBox"/>
+			<include name="verifyFontWeightOfsingleCheckBoxTextField"/>
+		</methods>
+	</class> --> 
+  <!--   <class name="com.anu.testscripts.RadioButtonDemoTest">
+		<methods>
+			<include name="verifyRadioButtonDemo"/>
+			<include name="verifyShapeOfShowSelectedValueButton"/>
+			<include name="verifyBorderColorOfShowSelectedValueButton"/>
+		</methods>
+	</class>-->
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
